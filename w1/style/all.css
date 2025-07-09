@@ -5,7 +5,10 @@
   box-sizing: border-box;
 }
 body {
+  font-family: "Noto Sans TC", sans-serif;
   line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: 0.05em;
 }
 
 h2,
@@ -13,9 +16,9 @@ h3 {
   line-height: 1.2;
 }
 
-p {
+/* p {
   line-height: 1.5;
-}
+} */
 
 .hero-section {
   background-image: url("../images/hero.png");

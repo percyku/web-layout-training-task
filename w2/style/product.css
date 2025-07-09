@@ -1,0 +1,39 @@
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  padding: 0 12px;
+  color: var(--neutral-300);
+  font-weight: 700;
+}
+
+.breadcrumb-item {
+  /* display: flex; */
+  font-weight: 500;
+}
+
+.breadcrumb-link {
+  color: var(--neutral-600);
+}
+
+.category .active {
+  color: var(--primary-400);
+}
+
+.category a:hover {
+  color: var(--primary-400);
+}
+
+.page-item .btn {
+  padding: 8px 15px;
+  border-radius: 0;
+  font-weight: 400;
+}
+
+.page-item .active {
+  background-color: var(--primary-300);
+  font-weight: 500;
+}
+
+/* .page-item :hover {
+  background-color: var(--primary-300);
+  font-weight: 500;
+} */

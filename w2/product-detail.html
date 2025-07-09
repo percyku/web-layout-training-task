@@ -6,20 +6,25 @@
     <title>W2 - 品牌產品列表頁 -product-detail</title>
     <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/all.css" />
+    <link rel="stylesheet" href="./style/product.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="nav d-flex align-items-center">
-        <h2 class="logo-text">URBNSTEP</h2>
-        <ul class="nav-list d-flex">
-          <li><a href="">商品列表</a></li>
-          <li><a href="">品牌故事</a></li>
-        </ul>
-        <a class="register-btn ml-auto" href="#">
-          <img src="./images/icons/person.svg" alt="" />
-        </a>
-      </div>
+    <!--top nav-->
+    <nav
+      class="container py-16 d-flex align-items-center justify-content-between"
+    >
+      <h1 class="py-8 me-48 h4">URBNSTEP</h1>
+      <ul class="d-flex align-items-center">
+        <li class="me-48"><a href="" class="py-12">商品列表</a></li>
+        <li class="me-48"><a href="" class="py-12">品牌故事</a></li>
+      </ul>
 
+      <a class="p-12 ml-auto" href="#">
+        <img src="./images/icons/person.svg" alt="" />
+      </a>
+    </nav>
+
+    <div class="container">
       <div class="product-detail d-flex">
         <div class="product-img">
           <div class="product-list d-flex flex-wrap justify-content-between">
@@ -204,26 +209,31 @@
       </div>
     </div>
 
-    <div class="register d-flex justify-content-center align-items-center">
-      <h2>加入會員取得 9 折優惠</h2>
-      <a href="#">馬上註冊</a>
+    <!--register-->
+    <div
+      class="bg-primary-200 d-flex justify-content-center align-items-center py-24 mb-64"
+    >
+      <p class="h4 me-24">加入會員取得 9 折優惠</p>
+      <button type="button" class="btn btn-dark">馬上註冊</button>
     </div>
-    <div class="container">
-      <div class="nav d-flex align-items-center">
-        <h2 class="logo-text">URBNSTEP</h2>
-        <ul class="nav-list d-flex ml-auto">
-          <li><a href="">商品列表</a></li>
-          <li><a href="">品牌故事</a></li>
-        </ul>
-      </div>
 
-      <div class="footer">
-        <hr />
-        <div class="text">
-          <p>Copyright ©2025 URBNSTYLE</p>
-          <p>All Rights Reserved.</p>
-        </div>
+    <!--bottom nav-->
+    <nav
+      class="container py-16 d-flex align-items-center justify-content-between mb-24"
+    >
+      <h1 class="py-8 me-48 h4">URBNSTEP</h1>
+      <ul class="d-flex align-items-center ml-auto">
+        <li class="me-48"><a href="" class="py-12">商品列表</a></li>
+        <li class="me-48"><a href="" class="py-12">品牌故事</a></li>
+      </ul>
+    </nav>
+
+    <!--footer-->
+    <footer class="bg-neutral-100">
+      <div class="container py-64 text-sm footer section-lined-top">
+        <p>Copyright ©2025 URBNSTYLE</p>
+        <p>All Rights Reserved.</p>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
