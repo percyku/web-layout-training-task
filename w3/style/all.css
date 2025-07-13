@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
 @import "story.css";
+@import "products.css";
 /* 顏色*/
 :root {
   --primary-100: #f5fee7;
@@ -24,7 +25,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  /* outline: solid 1px; */
+  outline: solid 1px;
 }
 body {
   font-family: "Noto Sans TC", sans-serif;
@@ -62,6 +63,16 @@ a {
   display: none;
 }
 
+@media (max-width: 768px) {
+  .d-md-none {
+    display: none;
+  }
+
+  .d-md-block {
+    display: block;
+  }
+}
+
 @media (max-width: 576px) {
   .d-sm-none {
     display: none;
@@ -69,6 +80,10 @@ a {
 
   .d-sm-block {
     display: block;
+  }
+
+  .d-sm-no-wrap {
+    flex-wrap: nowrap;
   }
 }
 
@@ -169,6 +184,81 @@ a {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  /* 平板格線系統總共是 4 欄、gap 為 12px */
+  .col-md-1 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12);
+  }
+
+  .col-md-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 2);
+  }
+
+  .col-md-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 3);
+  }
+
+  .col-md-4 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 4);
+  }
+
+  .col-md-5 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 5);
+  }
+
+  .col-md-6 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 6);
+  }
+
+  .col-md-7 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 7);
+  }
+
+  .col-md-8 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 8);
+  }
+
+  .col-md-9 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 9);
+  }
+
+  .col-md-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 10);
+  }
+
+  .col-md-11 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 11);
+  }
+
+  .col-md-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100%;
+  }
+}
+
 @media (max-width: 576px) {
   .container {
     /* padding: 0 6px; */
@@ -190,12 +280,12 @@ a {
   .col-sm-2 {
     padding-left: 6px;
     padding-right: 6px;
-    width: calc(100% / 4);
+    width: calc(100% / 4 * 2);
   }
   .col-sm-3 {
     padding-left: 6px;
     padding-right: 6px;
-    width: calc(100% / 4);
+    width: calc(100% / 4 * 3);
   }
   .col-sm-4 {
     padding-left: 6px;
@@ -328,6 +418,13 @@ a {
   padding-bottom: 64px;
 }
 
+@media (max-width: 768px) {
+  .py-md-24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
 @media (max-width: 576px) {
   .p-sm-32 {
     padding: 32px;
@@ -392,6 +489,21 @@ a {
 }
 .ml-auto {
   margin-left: auto;
+}
+@media (max-width: 768px) {
+  .mb-md-0 {
+    margin-bottom: 0px;
+  }
+
+  .mb-md-8 {
+    margin-bottom: 8px;
+  }
+  .mb-md-12 {
+    margin-bottom: 12px;
+  }
+  .mb-md-24 {
+    margin-bottom: 24px;
+  }
 }
 
 @media (max-width: 576px) {

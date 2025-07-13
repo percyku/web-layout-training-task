@@ -19,6 +19,12 @@
   color: var(--neutral-600);
 }
 
+@media (max-width: 576px) {
+  .breadcrumb-item {
+    font-size: 10px;
+  }
+}
+
 .category .active,
 .category a:hover {
   color: var(--primary-400);
@@ -83,6 +89,21 @@
 
 .product-action button {
   width: 50%;
+  font-size: 16px;
+}
+
+@media (max-width: 576px) {
+  .product-action {
+    gap: 0px;
+  }
+
+  .product-action button {
+    width: 85%;
+  }
+  .product-action img {
+    padding: 12px;
+    width: 15%;
+  }
 }
 
 .product-info-title {
