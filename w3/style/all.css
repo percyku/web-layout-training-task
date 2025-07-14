@@ -25,7 +25,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  outline: solid 1px;
+  /* outline: solid 1px; */
 }
 body {
   font-family: "Noto Sans TC", sans-serif;
@@ -37,7 +37,7 @@ body {
 }
 
 img {
-  /* display: block; */
+  /* display: block;  */
   vertical-align: middle;
   max-width: 100%;
   height: auto;
@@ -63,6 +63,10 @@ a {
   display: none;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 @media (max-width: 768px) {
   .d-md-none {
     display: none;
@@ -70,6 +74,21 @@ a {
 
   .d-md-block {
     display: block;
+  }
+
+  .d-md-flex-column {
+    flex-direction: column;
+  }
+
+  .d-md-contents {
+    display: contents;
+  }
+  .column-md-gap-16 {
+    column-gap: 16px;
+  }
+
+  .overflow-md-auto {
+    overflow-x: auto;
   }
 }
 
@@ -89,6 +108,10 @@ a {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
 }
 .justify-content-center {
   justify-content: center;
@@ -185,84 +208,8 @@ a {
 }
 
 @media (max-width: 768px) {
-  /* 平板格線系統總共是 4 欄、gap 為 12px */
-  .col-md-1 {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: calc(100% / 12);
-  }
-
-  .col-md-2 {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: calc(100% / 12 * 2);
-  }
-
-  .col-md-3 {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: calc(100% / 12 * 3);
-  }
-
-  .col-md-4 {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: calc(100% / 12 * 4);
-  }
-
-  .col-md-5 {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: calc(100% / 12 * 5);
-  }
-
-  .col-md-6 {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: calc(100% / 12 * 6);
-  }
-
-  .col-md-7 {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: calc(100% / 12 * 7);
-  }
-
-  .col-md-8 {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: calc(100% / 12 * 8);
-  }
-
-  .col-md-9 {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: calc(100% / 12 * 9);
-  }
-
-  .col-md-10 {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: calc(100% / 12 * 10);
-  }
-
-  .col-md-11 {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: calc(100% / 12 * 11);
-  }
-
-  .col-md-12 {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
   .container {
-    /* padding: 0 6px; */
-    padding: 0 12px;
+    padding: 0 6px;
   }
 
   .row {
@@ -270,24 +217,26 @@ a {
     margin-left: -6px;
     margin-right: -6px;
   }
-
-  /* 手機版格線系統總共是 4 欄、gap 為 12px */
-  .col-sm-1 {
+  /* 平板格線系統總共是 4 欄、gap 為 12px */
+  .col-md-1 {
     padding-left: 6px;
     padding-right: 6px;
     width: calc(100% / 4);
   }
-  .col-sm-2 {
+
+  .col-md-2 {
     padding-left: 6px;
     padding-right: 6px;
     width: calc(100% / 4 * 2);
   }
-  .col-sm-3 {
+
+  .col-md-3 {
     padding-left: 6px;
     padding-right: 6px;
     width: calc(100% / 4 * 3);
   }
-  .col-sm-4 {
+
+  .col-md-4 {
     padding-left: 6px;
     padding-right: 6px;
     width: 100%;
@@ -327,6 +276,36 @@ a {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.2;
+}
+
+@media (max-width: 767px) {
+  .h3-md {
+    font-size: 28px;
+  }
+  .h4-md {
+    font-size: 24px;
+  }
+  .h5-md {
+    font-size: 20px;
+  }
+  .h6-md {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .h3-sm {
+    font-size: 28px;
+  }
+  .h4-sm {
+    font-size: 24px;
+  }
+  .h5-sm {
+    font-size: 20px;
+  }
+  .h6-sm {
+    font-size: 16px;
+  }
 }
 
 .text-primary-200 {
@@ -419,19 +398,36 @@ a {
 }
 
 @media (max-width: 768px) {
+  .py-md-16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   .py-md-24 {
     padding-top: 24px;
     padding-bottom: 24px;
   }
+  .p-md-32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 @media (max-width: 576px) {
-  .p-sm-32 {
-    padding: 32px;
+  .px-sm-12 {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  .py-sm-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .py-sm-32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
-  .py-sm-12 {
-    padding: 12px 0px;
+  .p-sm-32 {
+    padding: 32px;
   }
 }
 
@@ -501,8 +497,19 @@ a {
   .mb-md-12 {
     margin-bottom: 12px;
   }
+  .mb-md-16 {
+    margin-bottom: 16px;
+  }
+
   .mb-md-24 {
     margin-bottom: 24px;
+  }
+  .mb-md-32 {
+    margin-bottom: 32px;
+  }
+
+  .mb-md-40 {
+    margin-bottom: 40px;
   }
 }
 
@@ -520,6 +527,10 @@ a {
   .mb-sm-32 {
     margin-bottom: 32px;
   }
+
+  .me-sm-16 {
+    margin-right: 16px;
+  }
 }
 
 .gap-8 {
@@ -535,6 +546,12 @@ a {
   cursor: pointer;
   border: none;
   background-color: transparent;
+}
+
+@media (max-width: 576px) {
+  .btn {
+    padding: 8px 16px;
+  }
 }
 
 .btn-dark {

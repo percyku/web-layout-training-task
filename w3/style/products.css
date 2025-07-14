@@ -19,9 +19,12 @@
   color: var(--neutral-600);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+  .breadcrumb-item + .breadcrumb-item::before {
+    padding: 0 12px;
+  }
   .breadcrumb-item {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
@@ -120,4 +123,18 @@
 .footer {
   text-align: center;
   padding: 64px 0px 32px;
+}
+
+@media (max-width: 768px) {
+  .you-like {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .you-like img {
+    max-width: 100%;
+    min-width: 0;
+    display: block;
+    object-fit: cover;
+  }
 }

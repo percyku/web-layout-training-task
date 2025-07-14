@@ -20,6 +20,7 @@
 
 @media (max-width: 576px) {
   .header {
+    padding: 87px 0px;
     background-image: url(../images/hero-sm.png);
   }
   .header h1 {
@@ -31,7 +32,7 @@
   }
 
   .quote {
-    text-align: start;
+    text-align: left;
   }
 }
 
