@@ -6,7 +6,6 @@
     <title>W3 - 產品列表頁-RWD</title>
     <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/all.css" />
-    <link rel="stylesheet" href="./style/product.css" />
   </head>
   <body>
     <!--top nav-->
@@ -14,10 +13,14 @@
     <nav class="container py-16 py-sm-12">
       <div class="row">
         <div class="col-12 col-sm-4 d-flex align-items-center">
-          <h1 class="p-12 me-48 h5 logo">URBNSTEP</h1>
+          <a href="#" class="py-8 me-48 logo"
+            ><img src="./images/logo.svg" alt=""
+          /></a>
           <ul class="d-flex align-items-center d-sm-none">
-            <li class="me-48"><a href="" class="py-12">商品列表</a></li>
-            <li class=""><a href="" class="py-12">品牌故事</a></li>
+            <li class="me-48">
+              <a href="products.html" class="py-12">商品列表</a>
+            </li>
+            <li class=""><a href="story.html" class="py-12">品牌故事</a></li>
           </ul>
           <a class="p-12 ml-auto" href="#">
             <img src="./images/icons/person.svg" alt="" />
@@ -54,9 +57,9 @@
 
         <!--product-list-->
         <div class="col-10 col-md-4">
-          <div class="row">
+          <div class="row mb-48 mb-md-32">
             <div class="col-4 col-md-2">
-              <a href="product-detail.html" class="mb-md-24">
+              <a href="product.html" class="mb-md-24">
                 <img
                   src="./images/product.png"
                   alt="PLAFORM 404blue"
@@ -168,7 +171,7 @@
           </div>
           <ul class="d-flex justify-content-center align-items-center">
             <li class="me-12 page-item">
-              <button href="#" class="btn" disabled>
+              <button class="btn btn-banner" disabled>
                 <img src="./images/icons/chevron-left.svg" alt="chevron-left" />
               </button>
             </li>
@@ -188,7 +191,7 @@
               <button type="button" class="btn">10</button>
             </li>
             <li class="me-8 page-item">
-              <button href="#" class="btn">
+              <button class="btn">
                 <img
                   src="./images/icons/chevron-right.svg"
                   alt="chevron-right"
@@ -211,31 +214,38 @@
         </div>
       </div>
     </div>
-    <!--bottom nav-->
-
-    <nav class="container mb-24">
-      <div class="row">
-        <div
-          class="col-12 col-md-4 mb-sm-8 d-flex align-items-center justify-content-between"
-        >
-          <h1 class="py-8 me-48 h5 logo">URBNSTEP</h1>
-          <ul class="d-flex align-items-center d-sm-none">
-            <li class="me-48"><a href="" class="py-12">商品列表</a></li>
-            <li><a href="" class="py-12">品牌故事</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <ul class="d-none d-sm-block">
-        <li class="mb-4"><a href="" class="p-12">商品列表</a></li>
-        <li><a href="mb-4" class="p-12">品牌故事</a></li>
-      </ul>
-    </nav>
     <!--footer-->
-    <footer class="bg-neutral-100">
-      <div class="container text-sm footer section-lined-top">
-        <p class="mb-4 text-sm text-neutral-600">Copyright ©2025 URBNSTYLE</p>
-        <p class="text-sm text-neutral-600">All Rights Reserved.</p>
+    <footer>
+      <!--bottom nav-->
+      <nav class="container mb-24">
+        <div class="row">
+          <div
+            class="col-12 col-md-4 mb-sm-8 d-flex align-items-center justify-content-between"
+          >
+            <a href="#" class="py-8 me-48 logo"
+              ><img src="./images/logo.svg" alt=""
+            /></a>
+            <ul class="d-flex align-items-center d-sm-none">
+              <li class="me-48">
+                <a href="products.html" class="py-12">商品列表</a>
+              </li>
+              <li><a href="story.html" class="py-12">品牌故事</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="d-none d-sm-block">
+          <li class="mb-4">
+            <a href="products.html" class="p-12">商品列表</a>
+          </li>
+          <li class="mb-4"><a href="story.html " class="p-12">品牌故事</a></li>
+        </ul>
+      </nav>
+      <div class="bg-neutral-100">
+        <div class="container text-sm footer section-lined-top">
+          <p class="mb-4 text-sm text-neutral-600">Copyright ©2025 URBNSTYLE</p>
+          <p class="text-sm text-neutral-600">All Rights Reserved.</p>
+        </div>
       </div>
     </footer>
   </body>

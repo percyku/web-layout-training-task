@@ -3,6 +3,12 @@
   padding: 8px 12px;
 }
 
+@media (max-width: 576px) {
+  .logo {
+    padding: 0px 0px;
+  }
+}
+
 .breadcrumb-item + .breadcrumb-item::before {
   content: "/";
   padding: 0 12px;
@@ -73,6 +79,16 @@
   width: 64px;
   text-align: center;
   color: var(--neutral-600);
+}
+.btn-product {
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  /* border: none; */
+  background-color: transparent;
 }
 
 .btn-product-size {

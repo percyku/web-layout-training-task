@@ -13,10 +13,14 @@
     <nav class="container py-16 py-sm-12">
       <div class="row">
         <div class="col-12 col-sm-4 d-flex align-items-center">
-          <h1 class="p-12 me-48 h5 logo">URBNSTEP</h1>
+          <a href="#" class="py-8 me-48 logo"
+            ><img src="./images/logo.svg" alt=""
+          /></a>
           <ul class="d-flex align-items-center d-sm-none">
-            <li class="me-48"><a href="" class="py-12">商品列表</a></li>
-            <li class=""><a href="" class="py-12">品牌故事</a></li>
+            <li class="me-48">
+              <a href="products.html" class="py-12">商品列表</a>
+            </li>
+            <li class=""><a href="story.html" class="py-12">品牌故事</a></li>
           </ul>
           <a class="p-12 ml-auto" href="#">
             <img src="./images/icons/person.svg" alt="" />
@@ -120,31 +124,39 @@
           <div class="mb-48">
             <p class="mb-8">尺寸</p>
             <div class="d-flex flex-wrap gap-8 mb-8">
-              <button type="button" class="btn btn-product-size active">
+              <button type="button" class="btn-product btn-product-size active">
                 35(22.5cm)
               </button>
-              <button type="button" class="btn btn-product-size">
+              <button type="button" class="btn-product btn-product-size">
                 36(23.0cm)
               </button>
-              <button type="button" class="btn btn-product-size">
+              <button type="button" class="btn-product btn-product-size">
                 37(23.5cm)
               </button>
-              <button type="button" class="btn btn-product-size">
+              <button type="button" class="btn-product btn-product-size">
                 38(24.0cm)
               </button>
-              <button type="button" class="btn btn-product-size">
+              <button type="button" class="btn-product btn-product-size">
                 39(25.0cm)
               </button>
-              <button type="button" class="btn btn-product-size">
+              <button type="button" class="btn-product btn-product-size">
                 40(25.5cm)
               </button>
-              <button type="button" class="btn btn-product-size">
+              <button type="button" class="btn-product btn-product-size">
                 41(26.0cm)
               </button>
-              <button type="button" class="btn btn-product-size" disabled>
+              <button
+                type="button"
+                class="btn-product btn-product-size btn-banner"
+                disabled
+              >
                 42(26.5cm)
               </button>
-              <button type="button" class="btn btn-product-size" disabled>
+              <button
+                type="button"
+                class="btn-product btn-product-size btn-banner"
+                disabled
+              >
                 43(27.0cm)
               </button>
             </div>
@@ -208,25 +220,45 @@
         <h2 class="h4 h5-md mb-16">你可能也喜歡...</h2>
 
         <div class="d-flex flex-nowrap overflow-md-auto">
-          <div class="col-3 d-md-contents">
-            <img src="./images/product-1.png" alt="VM001" class="mb-12" />
-            <h4 class="h6 mb-4">VM001</h4>
-            <p>NT$2.600</p>
+          <div class="col-3 col-md-4 d-md-contents">
+            <a href="">
+              <img
+                src="./images/product-1.png"
+                alt="VM001"
+                class="mb-12 d-md-block"
+              />
+              <h4 class="h6 mb-4">VM001</h4>
+              <p>NT$2.600</p></a
+            >
           </div>
-          <div class="col-3 d-md-contents">
-            <img src="./images/product-2.png" alt="Melty Kiss" class="mb-12" />
-            <h4 class="h6 mb-4">Melty Kiss</h4>
-            <p>NT$4.000</p>
+          <div class="col-3 col-md-4 d-md-contents">
+            <a href="">
+              <img
+                src="./images/product-2.png"
+                alt="Melty Kiss"
+                class="mb-12"
+              />
+              <h4 class="h6 mb-4">Melty Kiss</h4>
+              <p>NT$4.000</p>
+            </a>
           </div>
-          <div class="col-3 d-md-contents">
-            <img src="./images/product-3.png" alt="BOOMBLOK" class="mb-12" />
-            <h4 class="h6 mb-4">BOOMBLOK</h4>
-            <p>NT$3.200</p>
+          <div class="col-3 col-md-4 d-md-contents">
+            <a href="">
+              <img src="./images/product-3.png" alt="BOOMBLOK" class="mb-12" />
+              <h4 class="h6 mb-4">BOOMBLOK</h4>
+              <p>NT$3.200</p></a
+            >
           </div>
-          <div class="col-3 d-md-contents">
-            <img src="./images/product-4.png" alt="Sugar Snap" class="mb-12" />
-            <h4 class="h6 mb-4">Sugar Snap</h4>
-            <p>NT$3.200</p>
+          <div class="col-3 col-md-4 d-md-contents">
+            <a href="#">
+              <img
+                src="./images/product-4.png"
+                alt="Sugar Snap"
+                class="mb-12"
+              />
+              <h4 class="h6 mb-4">Sugar Snap</h4>
+              <p>NT$3.200</p>
+            </a>
           </div>
         </div>
       </div>
@@ -244,33 +276,38 @@
       </div>
     </div>
 
-    <!--bottom nav-->
-
-    <nav class="container mb-24">
-      <div class="row">
-        <div
-          class="col-12 col-md-4 mb-sm-8 d-flex align-items-center justify-content-between"
-        >
-          <h1 class="py-8 me-48 h5 logo">URBNSTEP</h1>
-          <ul class="d-flex align-items-center d-sm-none">
-            <li class="me-48"><a href="" class="py-12">商品列表</a></li>
-            <li><a href="" class="py-12">品牌故事</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <ul class="d-none d-sm-block">
-        <li class="mb-4"><a href="" class="p-12">商品列表</a></li>
-        <li><a href="mb-4" class="p-12">品牌故事</a></li>
-      </ul>
-    </nav>
-
     <!--footer-->
+    <footer>
+      <!--bottom nav-->
+      <nav class="container mb-24">
+        <div class="row">
+          <div
+            class="col-12 col-md-4 mb-sm-8 d-flex align-items-center justify-content-between"
+          >
+            <a href="#" class="py-8 me-48 logo"
+              ><img src="./images/logo.svg" alt=""
+            /></a>
+            <ul class="d-flex align-items-center d-sm-none">
+              <li class="me-48">
+                <a href="products.html" class="py-12">商品列表</a>
+              </li>
+              <li><a href="story.html" class="py-12">品牌故事</a></li>
+            </ul>
+          </div>
+        </div>
 
-    <footer class="bg-neutral-100">
-      <div class="container text-sm footer section-lined-top">
-        <p class="mb-4 text-sm text-neutral-600">Copyright ©2025 URBNSTYLE</p>
-        <p class="text-sm text-neutral-600">All Rights Reserved.</p>
+        <ul class="d-none d-sm-block">
+          <li class="mb-4">
+            <a href="products.html" class="p-12">商品列表</a>
+          </li>
+          <li class="mb-4"><a href="story.html " class="p-12">品牌故事</a></li>
+        </ul>
+      </nav>
+      <div class="bg-neutral-100">
+        <div class="container text-sm footer section-lined-top">
+          <p class="mb-4 text-sm text-neutral-600">Copyright ©2025 URBNSTYLE</p>
+          <p class="text-sm text-neutral-600">All Rights Reserved.</p>
+        </div>
       </div>
     </footer>
   </body>

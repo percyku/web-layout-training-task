@@ -25,7 +25,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  /* outline: solid 1px; */
+  outline: solid 1px;
 }
 body {
   font-family: "Noto Sans TC", sans-serif;
@@ -65,6 +65,10 @@ a {
 
 .flex-column {
   flex-direction: column;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
 }
 
 @media (max-width: 768px) {
@@ -546,6 +550,9 @@ a {
   cursor: pointer;
   border: none;
   background-color: transparent;
+}
+.btn-banner {
+  pointer-events: none;
 }
 
 @media (max-width: 576px) {
