@@ -119,7 +119,7 @@
   .product-action button {
     width: 85%;
   }
-  .product-action img {
+  .product-action a {
     padding: 12px;
     width: 15%;
   }
@@ -183,9 +183,4 @@
     padding-right: 6px;
     margin-right: 16px;
   }
-
-  /* .product-like-col a {
-    max-width: 100%;
-    display: block;
-  } */
 }
