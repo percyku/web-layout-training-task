@@ -1,4 +1,29 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.header {
+  background-image: url(../images/hero.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 152px 0;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 87px 0px;
+    background-image: url(../images/hero-sm.png);
+  }
+  .header h1 {
+    font-size: 28px;
+  }
+}
+
+.logo {
+  color: var(--neutral-900);
+  padding: 8px 12px;
+}
+
+@media (max-width: 576px) {
+  .logo {
+    padding: 0px 0px;
+  }
 }
