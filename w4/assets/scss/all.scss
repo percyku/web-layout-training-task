@@ -9,6 +9,7 @@
 
 @import "pages/story";
 @import "pages/products";
+@import "pages/index";
 
 *,
 *::before,
@@ -301,6 +302,17 @@ a {
   }
 }
 
+.dispaly-1 {
+  font-size: 64px;
+  line-height: 1.2;
+}
+
+@media (max-width: 576px) {
+  .dispaly-2-sm {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+}
 .text-primary-200 {
   background-color: var(--primary-200);
 }
@@ -540,6 +552,11 @@ a {
   border: none;
   background-color: transparent;
 }
+
+.btn-16 {
+  font-size: 16px;
+}
+
 .btn-banner {
   pointer-events: none;
 }
@@ -548,6 +565,11 @@ a {
   .btn {
     padding: 8px 16px;
   }
+}
+
+.btn-primary {
+  color: var(--neutral-900);
+  background-color: var(--primary-300);
 }
 
 .btn-dark {
