@@ -273,6 +273,9 @@ a {
 }
 
 @media (max-width: 767px) {
+  .h2-md {
+    font-size: 32px;
+  }
   .h3-md {
     font-size: 28px;
   }
@@ -307,12 +310,22 @@ a {
   line-height: 1.2;
 }
 
+.dispaly-2 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
 @media (max-width: 576px) {
   .dispaly-2-sm {
     font-size: 48px;
     line-height: 1.2;
   }
 }
+
+.text-center {
+  text-align: center;
+}
+
 .text-primary-200 {
   background-color: var(--primary-200);
 }
