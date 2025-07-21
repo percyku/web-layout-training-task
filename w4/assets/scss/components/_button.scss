@@ -1,0 +1,38 @@
+.btn {
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.btn-16 {
+  font-size: 16px;
+}
+
+.btn-banner {
+  pointer-events: none;
+}
+
+@media (max-width: 576px) {
+  .btn {
+    padding: 8px 16px;
+  }
+}
+
+.btn-primary {
+  color: $neutral-900;
+  background-color: $primary-300;
+}
+
+.btn-dark {
+  color: $neutral-0;
+  background-color: $neutral-900;
+}
+
+.btn-light {
+  border: 1px solid $neutral-900;
+}
