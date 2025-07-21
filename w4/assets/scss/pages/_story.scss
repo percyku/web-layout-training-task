@@ -42,21 +42,26 @@
 }
 
 .history-desc {
-  border-left: 1px solid var(--neutral-900);
+  border-left: 1px solid $neutral-900;
   padding-left: 8px;
 }
 
 .concept-item {
   padding-left: 12px;
-  border-left: 3px solid var(--neutral-300);
+  border-left: 3px solid $neutral-300;
 }
 
-.arrow-up-icon {
+// .arrow-up-icon {
+//   padding-right: 8px;
+//   vertical-align: bottom;
+// }
+
+.bi {
   padding-right: 8px;
   vertical-align: bottom;
 }
 
 .brand_story_desc a {
-  color: var(--primary-400);
+  color: $primary-400;
   text-underline-offset: 4px;
 }

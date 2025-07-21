@@ -1,5 +1,5 @@
 /* .logo {
-  color: var(--neutral-900);
+  color: $neutral-900;
   padding: 8px 12px;
 }
 
@@ -9,34 +9,9 @@
   }
 } */
 
-.breadcrumb-item + .breadcrumb-item::before {
-  content: "/";
-  padding: 0 12px;
-  color: var(--neutral-300);
-  font-weight: 700;
-}
-
-.breadcrumb-item {
-  display: flex;
-  font-weight: 500;
-}
-
-.breadcrumb-link {
-  color: var(--neutral-600);
-}
-
-@media (max-width: 768px) {
-  .breadcrumb-item + .breadcrumb-item::before {
-    padding: 0 12px;
-  }
-  .breadcrumb-item {
-    font-size: 14px;
-  }
-}
-
 .category .active,
 .category a:hover {
-  color: var(--primary-400);
+  color: $primary-400;
 }
 
 .page-item .btn {
@@ -47,7 +22,7 @@
 
 .page-item .active,
 .page-item :hover {
-  background-color: var(--primary-300);
+  background-color: $primary-300;
   font-weight: 500;
 }
 
@@ -71,14 +46,14 @@
 .del-price {
   font-size: 14px;
   font-weight: 400;
-  color: var(--neutral-500);
+  color: v$neutral-500;
   padding-left: 8px;
 }
 
 .product-color {
   width: 64px;
   text-align: center;
-  color: var(--neutral-600);
+  color: v$neutral-600;
 }
 .btn-product {
   border-radius: 4px;
@@ -92,13 +67,13 @@
 }
 
 .btn-product-size {
-  border: 1px solid var(--neutral-300);
+  border: 1px solid $neutral-300;
   width: 160px;
 }
 
 .btn-product-size.active,
 .btn-product-size:hover {
-  border-color: var(--neutral-900);
+  border-color: $neutral-900;
 }
 
 .product-action {
@@ -130,10 +105,10 @@
 }
 
 .product-info-item {
-  border-bottom: 1px solid var(--neutral-300);
+  border-bottom: 1px solid $neutral-300;
 }
 .product-info-item p {
-  color: var(--neutral-600);
+  color: $neutral-600;
 }
 
 /* .footer {
