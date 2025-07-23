@@ -1,0 +1,25 @@
+.bi-check {
+  border-radius: 50%;
+  background-color: $primary-300;
+  padding: 8px;
+}
+
+.run-time-section {
+  background-color: $primary-100;
+  padding: 16px;
+  color: $primary-400;
+}
+
+.collect-item {
+  display: flex;
+  .collect-item-img {
+    flex: 1;
+    .collect-product-img {
+      max-width: 120px;
+    }
+  }
+
+  .collect-item-desc {
+    flex: 4;
+  }
+}
