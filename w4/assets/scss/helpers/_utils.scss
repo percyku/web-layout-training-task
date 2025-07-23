@@ -24,6 +24,10 @@
     display: none;
   }
 
+  .d-md-flex {
+    display: flex;
+  }
+
   .d-md-block {
     display: block;
   }
@@ -39,7 +43,7 @@
     column-gap: 16px;
   }
 
-  .overflow-md-auto {
+  .overflow-x-md-auto {
     overflow-x: auto;
   }
 }
@@ -193,6 +197,14 @@
     padding-right: 6px;
     width: 100%;
   }
+
+  .flex-md-column {
+    flex-direction: column;
+  }
+
+  .flex-md-nowrap {
+    flex-wrap: nowrap;
+  }
 }
 
 .h1 {
@@ -230,7 +242,19 @@
   line-height: 1.2;
 }
 
+@media (max-width: 1092px) {
+  .h4-lg {
+    font-size: 24px;
+  }
+  .h5-lg {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 767px) {
+  .h1-md {
+    font-size: 40px;
+  }
   .h2-md {
     font-size: 32px;
   }
@@ -263,20 +287,23 @@
   }
 }
 
-.dispaly-1 {
+.display-1 {
   font-size: 64px;
   line-height: 1.2;
+  font-weight: 700;
 }
 
-.dispaly-2 {
+.display-2 {
   font-size: 48px;
   line-height: 1.2;
+  font-weight: 700;
 }
 
 @media (max-width: 576px) {
-  .dispaly-2-sm {
+  .display-2-sm {
     font-size: 48px;
     line-height: 1.2;
+    font-weight: 700;
   }
 }
 
@@ -284,12 +311,44 @@
   text-align: center;
 }
 
+.text-sm {
+  font-size: 14px;
+}
+
+.text-md {
+  font-size: 16px;
+  // font-weight: 400;
+  // line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  .text-md-md {
+    font-size: 16px;
+  }
+}
+
+.text-lg {
+  font-size: 20px;
+}
+
 .text-primary-200 {
   background-color: $primary-200;
 }
 
+.text-primary-300 {
+  color: $primary-300;
+}
+
 .text-primary-400 {
   color: $primary-400;
+}
+
+.text-primary-500 {
+  color: $primary-500;
+}
+
+.text-neutral-500 {
+  color: $neutral-500;
 }
 
 .text-neutral-600 {
@@ -302,15 +361,6 @@
 
 .text-white {
   color: $primary-100;
-}
-.text-sm {
-  font-size: 14px;
-}
-
-.text-md {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
 }
 
 .bg-primary-100 {
@@ -332,6 +382,10 @@
   padding: 32px;
 }
 
+.px-24 {
+  padding-right: 24px;
+  padding-left: 24px;
+}
 .pe-8 {
   padding-right: 8px;
 }
@@ -382,6 +436,20 @@
     padding-top: 24px;
     padding-bottom: 24px;
   }
+  .py-md-32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .py-md-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .pb-md-32 {
+    padding-bottom: 32px;
+  }
+
   .p-md-32 {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -511,4 +579,14 @@
 
 .gap-8 {
   gap: 8px;
+}
+
+@media (max-width: 767px) {
+  .gap-md-4 {
+    gap: 4px;
+  }
+
+  .gap-md-8 {
+    gap: 8px;
+  }
 }
