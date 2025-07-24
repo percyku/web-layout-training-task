@@ -58,7 +58,7 @@
 .btn-product {
   border-radius: 4px;
   padding: 12px 24px;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
@@ -93,7 +93,9 @@
 
   .product-action button {
     width: 85%;
+    padding: 12px 84px;
   }
+
   .product-action a {
     padding: 12px;
     width: 15%;
@@ -148,14 +150,14 @@
 
 @media (max-width: 768px) {
   .product-like {
-    margin-left: -6px;
-    margin-right: -6px;
+    margin-left: -8px;
+    margin-right: -8px;
   }
   .product-like-col {
-    min-width: 300px;
+    min-width: 316px;
     height: auto;
-    padding-left: 6px;
-    padding-right: 6px;
-    margin-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    // margin-right: 16px;
   }
 }
