@@ -170,36 +170,36 @@
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 6px;
+    padding: 0 12px;
   }
 
   .row {
     /* 抵銷最左邊和最右邊的 col 多出來的 padding */
-    margin-left: -6px;
-    margin-right: -6px;
+    margin-left: -12px;
+    margin-right: -12px;
   }
   /* 平板格線系統總共是 4 欄、gap 為 12px */
   .col-md-1 {
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
     width: calc(100% / 4);
   }
 
   .col-md-2 {
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
     width: calc(100% / 4 * 2);
   }
 
   .col-md-3 {
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
     width: calc(100% / 4 * 3);
   }
 
   .col-md-4 {
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
     width: 100%;
   }
 
