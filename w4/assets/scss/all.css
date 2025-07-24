@@ -1255,4 +1255,24 @@ a {
 }
 .collect-item .collect-item-desc {
   flex: 4;
+}
+
+.header-shoes {
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 71px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 416px;
+}
+
+@media (max-width: 576px) {
+  .header-shoes {
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-bottom: 150px;
+    background-image: url(../images/banner-sm.png);
+  }
 }/*# sourceMappingURL=all.css.map */

@@ -1,0 +1,75 @@
+.header-shoes {
+  background-image: url(../images/login.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  border-radius: 16px;
+  height: 100%;
+  p {
+    text-align: end;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-shoes {
+    background-position: center;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-bottom: 150px;
+    border-radius: 0px;
+
+    background-image: url(../images/banner-sm.png);
+    p {
+      text-align: start;
+    }
+  }
+}
+
+.login-section {
+  background-image: url(../images/login-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 100%;
+  padding: 120px 80px;
+  text-align: center;
+
+  .btn {
+    width: 50%;
+    color: $neutral-300;
+    padding: 12px 130px;
+    border-bottom: 2px solid $neutral-300;
+  }
+
+  .btn.active,
+  .btn:hover {
+    color: $neutral-900;
+    border-bottom: 2px solid $neutral-900;
+  }
+
+  .login-sectio-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid $neutral-300;
+    border-radius: 8px;
+    background-color: $neutral-0;
+  }
+}
+
+@media (max-width: 1300px) {
+  .login-section {
+    padding: 60px 40px;
+
+    .btn {
+      padding: 12px 72px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .login-section {
+    padding: 32px 12px;
+  }
+}
